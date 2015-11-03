@@ -1,0 +1,35 @@
+# include <stdlib.h>
+# include <stdio.h>
+# define N 8
+
+void main ()
+{
+
+	int init_matrice (int mat_init[N+2][N+2])
+	{
+		int i;
+		int j;
+	
+		for (i=0; i<N+2; i++)
+		{
+			for (j=0; j<N+2; j++)
+			{
+				mat_init[i][j]=0;
+			}	
+		}
+		return mat_init[N][N];
+	}
+	void afficher_matrice (int mat_init[N+2][N+2])
+	{
+		/*FILE * fic_init;*/
+		/*char nom_fichier[20];*/
+		/*printf("Donnez le nom du fichier : \n");*/
+		/*scanf("%s", nom_fichier);*/	
+		init_matrice (mat_init[N+2][N+2]);
+		printf("%i", mat_init[N][N]);
+		/*fic_init=fopen(nom_fichier, "w");*/
+		/*fprintf(nom_fichier, "Voici la matrice initialisee :\n %i", mat_init[N][N]);*/
+
+	}
+	
+}
